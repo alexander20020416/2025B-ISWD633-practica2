@@ -49,11 +49,32 @@ docker network ls
 ![Imagen](esquema-ejercicio-redes.PNG)
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
+<img width="1192" height="641" alt="imagen" src="https://github.com/user-attachments/assets/05f591e9-bdf6-49de-81f9-f7368370f140" />
 
 # COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
+<img width="923" height="857" alt="imagen" src="https://github.com/user-attachments/assets/bcf4b982-6679-4ec3-b2dc-6a5c35aae6e4" />
+
+<img width="900" height="952" alt="imagen" src="https://github.com/user-attachments/assets/a8eafd16-2404-413c-8b95-8c87707104fe" />
+
 
 ### Para eliminar las redes creadas
 ```
 docker network rm <nombre de la red>
 ```
+``````
+C:\Users\ASUS TUF F15>docker rm -f contenedor1 contenedor2 contenedor3 contenedor4
+contenedor1
+contenedor2
+contenedor3
+contenedor4
 
+C:\Users\ASUS TUF F15>docker network rm red-publica red-privada
+red-publica
+red-privada
+
+C:\Users\ASUS TUF F15>docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+85970b1a1615   bridge    bridge    local
+3e203dc59c57   host      host      local
+08d55c19591d   none      null      local
+```
